@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import {Link} from 'react-router-dom'
 
 function MemberComponent(){
     const [clients, setClients] = useState([]);
@@ -18,6 +19,7 @@ function MemberComponent(){
     return (
         <div className='App'>
         <header className='App-header'>
+          <Link to = '/employees' className = 'btn btn-primary mb-2'>First View</Link>
           <div className='App-intro'>
             <h2>Members</h2>
             {clients.map((client) => (
